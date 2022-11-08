@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-img"></div>
+          <div class="card-info">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M4.828 21l-.02.02-.021-.02H2.992A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H4.828zM20 15V5H4v14L14 9l6 6zm0 2.828l-6-6L6.828 19H20v-1.172zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path></svg>
+            <p class="text-title">Card title</p>
+            <p class="text-body">Lorem Ipsum dolor sit amet</p>
+            <button class="card-button">Read More</button>
+          </div>
+        </div>
+    <div class="box">
+        <div class="box-header">
+            <h1>My Todo</h1>
+            <div class="input-group">
+                <input type="text" class="input" id="input" name="input" placeholder="Add your todos" autocomplete="on">
+                <input class="button--submit"  onclick="newElement()"  value="Add" type="submit">
+            </div>
+            <!-- <input  id="input" type="text">
+            <span onclick="newElement()" class="addbtn">Add</span> -->
+
+        </div>
+        <ul id="myUL">
+            <li>Call Bryhim all night</li>
+            <li>Ask for help</li>
+            <li>Make sure the work is done</li>
+            <li>Buy cream</li>
+            <li>visit someone</li>
+            <li>Organize office</li>
+          </ul>
+    </div>
+   
+
+    <script src="./app.js"></script>
+</body>
+</html>
